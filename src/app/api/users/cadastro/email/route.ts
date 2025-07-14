@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
   try {
     await transporter.sendMail(mailOptions);
 
-    await prisma.VerificationCode.upsert({
+    await prisma.verificationCode.upsert({
       where: { email },
       update: {},
       create: {

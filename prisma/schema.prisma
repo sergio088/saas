@@ -23,7 +23,7 @@ model User {
  
 model VerificationCode {
   id         String   @id @default(cuid())
-  email      String
+  email      String   @unique
   code       String
   createdAt  DateTime @default(now())
   expiresAt  DateTime

@@ -7,7 +7,7 @@ export async function POST(req: NextRequest) {
   const { codeEmail } = body;
 
   try {
-    const verificationCode = await prisma.VerificationCode.findFirst({
+    const verificationCode = await prisma.verificationCode.findFirst({
       where: {
         code: codeEmail,
       },
