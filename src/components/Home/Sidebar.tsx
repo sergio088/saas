@@ -72,6 +72,6 @@ const MySidebar = forwardRef<HTMLDivElement, object>((props, ref) => {
     </div>
   );
 });
-Sidebar.displayName = "Sidebar";
+MySidebar.displayName = "MySidebar";
 
 export default MySidebar;

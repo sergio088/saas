@@ -25,5 +25,5 @@ const SideBar = forwardRef<HTMLDivElement, object>((props, ref) => {
     </div>
   );
 });
-Sidebar.displayName = "Sidebar";
+SideBar.displayName = "SideBar";
 export default SideBar;
