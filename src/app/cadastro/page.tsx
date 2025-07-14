@@ -70,7 +70,7 @@ export default function Cadastro() {
   }
 
   return (
-    <div className="flex  ">
+    <div className="flex justify-center items-center ">
       <div className="space-y-6 lg:w-1/4 ">
         <Title1e2
           title1="O seu espaço de controle de estoque"

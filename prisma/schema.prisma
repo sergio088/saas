@@ -3,9 +3,10 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
 
 model User {
   id             String    @id @default(cuid())
@@ -36,11 +37,12 @@ model VerificationCode {
   type               String
   provider           String
   providerAccountId  String
-  refresh_token      String?  @db.Text
-  access_token       String?  @db.Text
-  id_token           String?  @db.Text
-  scope              String?  @db.Text
-  session_state      String?  @db.Text
+  refresh_token      String?
+  access_token       String?
+  id_token           String?
+  scope              String?
+  session_state      String?
+
   token_type         String?
   expires_at         Int?
 
