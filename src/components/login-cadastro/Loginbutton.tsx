@@ -1,10 +1,9 @@
 "use client";
 
-import { signIn, useSession } from "next-auth/react";
+import { signIn } from "next-auth/react";
+import Image from "next/image";
 
 export default function LoginGoogle() {
-  const { data: session } = useSession();
-
   return (
     <div>
       <button
@@ -17,13 +16,13 @@ export default function LoginGoogle() {
         }
       >
         <div className="flex items-center justify-center space-x-3">
-          <img
+          <Image
             src="https://auth-cdn.oaistatic.com/assets/google-logo-NePEveMl.svg"
             width="16"
             height="16"
             alt="Logotipo do Google"
             className="_root_jbbqu_1"
-          ></img>
+          ></Image>
 
           <span className="flex justify-center">Entrar com Google</span>
         </div>

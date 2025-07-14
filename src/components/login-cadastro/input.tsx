@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 type EmailInputProps = {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  erro: boolean;
+  erro?: boolean;
 };
 
 const Emailinput = forwardRef<HTMLInputElement, EmailInputProps>(

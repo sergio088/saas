@@ -11,7 +11,6 @@ export default function Login() {
   const [senha, setSenha] = useState("");
   const [email, setemail] = useState("");
   const router = useRouter();
-  const [erro, seterro] = useState(false);
 
   async function Continuar() {
     if (!email || !senha) {
@@ -41,10 +40,7 @@ export default function Login() {
 
         <LoginGoogle></LoginGoogle>
 
-        <Emailinput
-          erro={erro}
-          onChange={(e) => setemail(e.target.value)}
-        ></Emailinput>
+        <Emailinput onChange={(e) => setemail(e.target.value)}></Emailinput>
         <Senha onChange={(e) => setSenha(e.target.value)}></Senha>
         <button
           onClick={Continuar}

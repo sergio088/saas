@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
         { status: 400 }
       );
     }
-  } catch (err) {
+  } catch {
     return NextResponse.json({ message: "Erro no server" }, { status: 500 });
   }
 }

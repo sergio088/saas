@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
 
   console.log(email, senha);
   try {
-    const sendsenha = await prisma.User.create({
+    await prisma.User.create({
       data: {
         name,
         email,

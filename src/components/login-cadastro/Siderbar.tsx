@@ -1,7 +1,7 @@
 import { Sidebar, Menu, MenuItem, sidebarClasses } from "react-pro-sidebar";
 import { forwardRef } from "react";
 
-const SideBar = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const SideBar = forwardRef<HTMLDivElement, object>((props, ref) => {
   return (
     <div ref={ref} className="fixed top-0 right-0 flex h-screen w-64 shadow ">
       <Sidebar
@@ -25,5 +25,5 @@ const SideBar = forwardRef<HTMLDivElement, {}>((props, ref) => {
     </div>
   );
 });
-
+Sidebar.displayName = "Sidebar";
 export default SideBar;

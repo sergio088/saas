@@ -20,5 +20,5 @@ const Senha = forwardRef<HTMLInputElement, Senhaprops>(
     );
   }
 );
-
+Senha.displayName = "Senha";
 export default Senha;

@@ -20,5 +20,5 @@ const VerificarEmail = forwardRef<HTMLInputElement, inputprops>(
     );
   }
 );
-
+VerificarEmail.displayName = "VerificarEmail";
 export default VerificarEmail;
